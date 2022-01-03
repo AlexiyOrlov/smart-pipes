@@ -1,0 +1,40 @@
+{
+  "textures": {
+    "sidetexture": "smart_pipes:block/item_pipe"
+  },
+  "elements": [
+    {
+      "from": [
+        4,
+        4,
+        0
+      ],
+      "to": [
+        12,
+        12,
+        4
+      ],
+      "faces": {
+        "down": {
+          "texture": "#sidetexture"
+        },
+        "up": {
+          "texture": "#sidetexture"
+        },
+        "north": {
+          "texture": "#sidetexture"
+        },
+        "south": {
+          "texture": "#sidetexture"
+        },
+        "west": {
+          "texture": "#sidetexture"
+        },
+        "east": {
+          "texture": "#sidetexture"
+        }
+      }
+    }
+  ]
+
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "bgb"
+  ],
+  "key": {
+    "b": {
+      "item": "minecraft:brick"
+    },
+    "g": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "smart_pipes:smart_pipe",
+    "count": 4
+  }
+}

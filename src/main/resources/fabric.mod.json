@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "smart_pipes",
+  "version": "${version}",
+
+  "name": "Smart Pipes",
+  "description": "Item pipes with advanced configuration",
+  "authors": [
+    "Alexiy"
+  ],
+  "contact": {},
+
+  "license": "GNU GPLv3",
+  "icon": "assets/smart_pipes/textures/smart_pipes.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "dev.buildtool.smartpipes.client.SmartPipesClient"
+    ],
+    "main": [
+      "dev.buildtool.smartpipes.SmartPipes"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "satako": "*"
+  }
+}

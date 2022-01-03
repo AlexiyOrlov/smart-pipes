@@ -1,0 +1,41 @@
+{
+  "parent": "block/block",
+  "textures": {
+    "sidetexture": "smart_pipes:block/item_pipe",
+    "particle": "smart_pipes:block/item_pipe"
+  },
+  "elements": [
+    {
+      "from": [
+        4,
+        4,
+        4
+      ],
+      "to": [
+        12,
+        12,
+        12
+      ],
+      "faces": {
+        "down": {
+          "texture": "#sidetexture"
+        },
+        "up": {
+          "texture": "#sidetexture"
+        },
+        "north": {
+          "texture": "#sidetexture"
+        },
+        "south": {
+          "texture": "#sidetexture"
+        },
+        "west": {
+          "texture": "#sidetexture"
+        },
+        "east": {
+          "texture": "#sidetexture"
+        }
+      }
+    }
+  ]
+}

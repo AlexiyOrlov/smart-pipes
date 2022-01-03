@@ -1,0 +1,8 @@
+{
+  "parent": "block/orientable",
+  "textures": {
+    "top": "smart_pipes:block/barrel_top",
+    "front": "smart_pipes:block/barrel_front",
+    "side": "smart_pipes:block/barrel"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "smart_pipes:block/barrel",
+      "x": 0
+    },
+    "facing=south": {
+      "model": "smart_pipes:block/barrel",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "smart_pipes:block/barrel",
+      "y": 90
+    },
+    "facing=west": {
+      "model": "smart_pipes:block/barrel",
+      "y": 270
+    }
+  }
+}
