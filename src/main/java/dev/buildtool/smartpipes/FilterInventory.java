@@ -50,10 +50,10 @@ public class FilterInventory extends DefaultInventory {
     }
 
     @Override
-    public DefaultInventory readFromTag(NbtCompound nbtCompound) {
+    public void readFromTag(NbtCompound nbtCompound) {
         whitelist = nbtCompound.getBoolean("Whitelist");
         if (nbtCompound.contains("Item_holding"))
             holdItems = nbtCompound.getBoolean("Item_holding");
-        return super.readFromTag(nbtCompound);
+        super.readFromTag(nbtCompound);
     }
 }

@@ -11,7 +11,7 @@ import java.util.Objects;
 /**
  * Created on 8/6/19.
  */
-public class PipedItem implements TagConvertible<PipedItem> {
+public class PipedItem implements TagConvertible {
     public static final String ALIGNED = "Aligned";
     private ItemStack content = ItemStack.EMPTY;
     private static final String STACK = "ItemStack", X = "x", Y = "y", Z = "z", FROM = "From side", TO = "To side", ID = "Id";
@@ -80,7 +80,7 @@ public class PipedItem implements TagConvertible<PipedItem> {
     }
 
     @Override
-    public PipedItem readFromTag(NbtCompound tag) {
+    public void readFromTag(NbtCompound tag) {
         content = ItemStack.fromNbt(tag.getCompound(STACK));
         x = tag.getFloat(X);
         y = tag.getFloat(Y);
@@ -89,7 +89,6 @@ public class PipedItem implements TagConvertible<PipedItem> {
         from = Direction.values()[tag.getByte(FROM)];
         id = tag.getInt(ID);
         aligned = tag.getBoolean(ALIGNED);
-        return this;
     }
 
     public PipedItem copy() {

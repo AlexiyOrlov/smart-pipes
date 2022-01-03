@@ -89,7 +89,7 @@ public class BarrelEntity extends BaseBlockEntity implements Inventory {
     @Override
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
-        inventory = inventory.readFromTag(nbt.getCompound("Items"));
+        inventory.readFromTag(nbt.getCompound("Items"));
     }
 
     @Override

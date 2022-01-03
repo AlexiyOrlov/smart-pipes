@@ -602,7 +602,7 @@ public class ItemPipeEntity extends BaseBlockEntity implements SidedInventory, E
     @Override
     public void readNbt(NbtCompound nbt) {
         super.readNbt(nbt);
-        inventory = inventory.readFromTag(nbt.getCompound("Inventory"));
+        inventory.readFromTag(nbt.getCompound("Inventory"));
         nextPipeId = nbt.getInt("Next_item_id");
         int pipedItemCount = nbt.getInt("Piped_items");
         if (world != null && world.isClient)
@@ -621,11 +621,11 @@ public class ItemPipeEntity extends BaseBlockEntity implements SidedInventory, E
                 fromTo.put(from, to);
             }
         }
-        northFilter = (FilterInventory) northFilter.readFromTag(nbt.getCompound("North_filter"));
-        southFilter = (FilterInventory) southFilter.readFromTag(nbt.getCompound("South_filter"));
-        eastFilter = (FilterInventory) eastFilter.readFromTag(nbt.getCompound("East_filter"));
-        westFilter = (FilterInventory) westFilter.readFromTag(nbt.getCompound("West_filter"));
-        topFilter = (FilterInventory) topFilter.readFromTag(nbt.getCompound("Top_filter"));
-        bottomFilter = (FilterInventory) bottomFilter.readFromTag(nbt.getCompound("Bottom_filter"));
+        northFilter.readFromTag(nbt.getCompound("North_filter"));
+        southFilter.readFromTag(nbt.getCompound("South_filter"));
+        eastFilter.readFromTag(nbt.getCompound("East_filter"));
+        westFilter.readFromTag(nbt.getCompound("West_filter"));
+        topFilter.readFromTag(nbt.getCompound("Top_filter"));
+        bottomFilter.readFromTag(nbt.getCompound("Bottom_filter"));
     }
 }
